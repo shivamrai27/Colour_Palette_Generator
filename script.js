@@ -10,9 +10,28 @@ const singleHexColorGenerator = () => {
     }
     return hexColor;
 }
+
+const colorPalettes = () => {
+    let hexPalettes = [];
+    for (let i = 0; i < 4; i++) {
+        hexPalettes.push(singleHexColorGenerator());
+    }
+    return hexPalettes;
+}
 const renderColorPalette = () => {
-    const hex = singleHexColorGenerator();
-    console.log(hex);
+
+    const colors_containerEl = document.querySelector(".colors_container")
+    colors_containerEl.innerHTML = "";
+
+    const colorPalette = colorPalettes();
+    colorPalette.forEach((color, i) => {
+
+        const colorDiv = document.createElement("div");
+        colorDiv.id = `color1${i + 1}`;
+        colorDiv.style.background = color
+        colors_containerEl.append(colorDiv);
+
+    })
 }
 
 generateBtnEl.addEventListener('click', renderColorPalette);

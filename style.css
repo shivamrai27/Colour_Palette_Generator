@@ -32,7 +32,7 @@ body {
     justify-content: center;
 }
 
-button {
+#generateBtn {
     padding: 1rem;
     font-size: medium;
     font-weight: 600;
