@@ -29,9 +29,17 @@ const renderColorPalette = () => {
         const colorDiv = document.createElement("div");
         colorDiv.id = `color1${i + 1}`;
         colorDiv.style.background = color
-        colors_containerEl.append(colorDiv);
+        colorDiv.className = 'colorBox'
+
+        const colorTag = document.createElement("p");
+        colorTag.id = `color1${i + 1}Tag`
+        colorTag.className = "colorTag";
+        colorTag.innerHTML = color;
+        colorDiv.appendChild(colorTag);
+
+        colors_containerEl.appendChild(colorDiv);
 
     })
 }
-
+renderColorPalette();
 generateBtnEl.addEventListener('click', renderColorPalette);
