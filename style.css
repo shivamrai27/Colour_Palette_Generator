@@ -22,7 +22,7 @@ body {
     justify-content: center;
     color: #ffffff;
     height: 10vh;
-    background: linear-gradient(to right, #8360c3, #2ebf91);
+    background: linear-gradient(to right, #8360c3, #b54ddf);
 }
 
 .blank {
@@ -45,4 +45,26 @@ button {
 
 button:active {
     background-color: #a477f6;
+}
+
+.colors_container {
+    height: 72vh;
+    display: grid;
+
+}
+
+#color1 {
+    background-color: orange;
+}
+
+#color2 {
+    background-color: white;
+}
+
+#color3 {
+    background-color: green;
+}
+
+#color4 {
+    background-color: white;
 }
