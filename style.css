@@ -53,6 +53,18 @@ button:active {
 
 }
 
+.colorBox p {
+    margin-top: 1rem;
+    padding: 0.2rem;
+    background-color: wheat;
+    /* display: inline-block; */
+    display: none;
+}
+
+.colorBox:hover p {
+    display: inline-block;
+}
+
 #color1 {
     background-color: orange;
 }
